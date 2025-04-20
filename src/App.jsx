@@ -10,7 +10,8 @@ function App() {
   function addTodo(title){
     const newTodo = {
       title: title,
-      id: Date.now()
+      id: Date.now(),
+      isCompleted: false
     }
     setTodoList([...todoList, newTodo])
   }
